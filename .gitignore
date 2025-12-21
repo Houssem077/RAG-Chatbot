@@ -1,0 +1,19 @@
+# Environnements
+rag-env/
+venv/
+.env
+
+# Python
+__pycache__/
+*.pyc
+
+# ChromaDB (optionnel)
+data/chroma/
+
+# OS / IDE
+.vscode/
+.idea/
+.DS_Store
+
+# Streamlit
+.streamlit/
