@@ -15,10 +15,7 @@ COLLECTION_NAME = "knowledge_base"
 embedding_model = SentenceTransformer("sentence-transformers/all-MiniLM-L6-v2")
 
 def embed_texts(texts: list[str]) -> list[list[float]]:
-    embeddings = embedding_model.encode(
-        texts,
-        normalize_embeddings=True
-    )
+    embeddings = embedding_model.encode(texts,normalize_embeddings=True)
     return embeddings.tolist()
 
 def main():
